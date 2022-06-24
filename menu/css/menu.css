@@ -92,6 +92,7 @@
 
 .header__menu--link {
     display: flex;
+    align-items: center;
 }
 
 .menu_link {
@@ -115,10 +116,9 @@
     justify-content: space-between;
 }
 
-.header__menu--link-before {
-    border-right: 1px solid var(--grey-lightest);
+.header__menu--divider-vertical {
     height: 32px;
-    margin-top: -6px;
+    border-right: 1px solid var(--grey-lightest);
 }
 
 .header__menu--icon {
@@ -242,7 +242,6 @@
 
     .header__navbar {
         display: flex;
-        justify-content: flex-start;
     }
 
     .header__menu--icon {
@@ -254,8 +253,8 @@
         margin-left: 12px;
     }
 
-    .header__menu--useravatar-before {
-        margin-left: 19px;
+    .header__menu--divider-vertical {
+        margin: 0 19px;
         border: 1px solid var(--grey-lightest);
         height: 32px;
         color: var(--grey);
@@ -266,7 +265,6 @@
         background: #EDEEF2;
         border-radius: 16px;
         padding: 14px;
-        margin-left: 16px;
         cursor: pointer;
         border: 1px solid var(--white);
     }
