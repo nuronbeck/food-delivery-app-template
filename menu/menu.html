@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery</title>
+    <!-- Normalize default styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@300&family=Nunito:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <!-- css link -->
+    <link rel="stylesheet" href="css/menu.css" />
+</head>
+
+<body>
+    <header class="header__menu">
+        <div class="container">
+            <div class="header__navbar">
+                <div class="header__menu--left-side">
+                    <img class="header__menu--logo" src="./img/main_logo.svg" alt="Food delivery website logo" />
+
+                    <div class="header__menu--search">
+                        <input class="header__menu--search-input" type="text" placeholder="Search " />
+                        <i class="header__menu--search-icon fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="header__menu--right-side">
+                    <nav class="header__menu--link">
+                        <a class="menu_link" href="#">Restaurants</a>
+                        <a class="menu_link" href="#">Deals</a>
+                        <span class="header__menu--link-before"></span>
+                        <a class="menu_link active" href="#">My orders</a>
+                    </nav>
+                    <div class="header__menu--icon">
+                        <a href="#"><img class="header__menu--icon-item" src="img/shopping bag.svg"
+                                alt="shopping bag icon" /></a>
+                        <span class="header__menu--icon-number">4</span>
+                    </div>
+                    <a href="#">
+                        <img class="header__menu--useravatar" src="img/useravatar.svg" alt="useravatar img" /></a>
+                    <span class="header__menu--useravatar-before"></span>
+                    <img class="header__menu--icon-mobile" src="img/menu.svg" alt=" header menu icon " />
+                </div>
+            </div>
+        </div>
+    </header>
+<section class="main">
+    <div class="card">
+        <div class="card__header">
+            <h3 class="card__image--h1">FEATURED</h3>
+        </div>
+        <div class="card__content">
+            <div class="card__content---top">
+                <h2 class="card__content---top-title">Royal Sushi House</h2>
+                <a  href="#"><img class="card__content---top-icon" src="img/shopping bag gray.svg" alt="Card Icon"></a>
+            </div>
+            <div class="card__content---bottom">
+                <img src="img/clock.svg" alt="clock icon">
+                <p class="card__content---bottom-text">30-40 min <span></span> $49 min sum</p>
+            </div>
+            <button type="button" class="card__btn"><img src="img/sushi.svg" alt="sushu btn image">Sushi</button>
+        </div>
+    </div>
+</section>
+
+    </main>
+</body>
+
+</html>
