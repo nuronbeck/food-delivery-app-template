@@ -95,7 +95,7 @@ a {
     color: var(--bluw-light);
 }
 
-
+/* for mobile version */
 @media screen and (max-width: 768px) {
     .container {
         padding: 0;
