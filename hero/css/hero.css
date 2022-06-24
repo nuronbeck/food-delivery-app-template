@@ -91,6 +91,8 @@ a {
     letter-spacing: 0.1px;
 }
 
+/* free time */
+
 .hero_name:hover {
     color: var(--bluw-light);
 }
