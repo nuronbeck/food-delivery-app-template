@@ -50,8 +50,6 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 15px;
-    /* grid-row-gap: 15px;
-    grid-column-gap: 15px; */
 }
 
 .hero_item {
@@ -100,15 +98,11 @@ a {
 
 @media screen and (max-width: 768px) {
     .container {
-        padding: 0 15px;
+        padding: 0;
     } 
 
     .hero_inner {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .hero_item {
-        width: 28%;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 15px;
     }
 }
