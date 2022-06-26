@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="./hero.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,45 +13,119 @@
     <section class="hero">
         <div class="container">
             <div class="hero_inner">
-                <div class="hero_item">
+                <a href="#" class="hero_item">
                     <div class="hero_photo">
                         <img class="hero_img" src="./main/pizza.png" alt="">
                     </div>
-                    <a href="#" class="hero_name">Pizza</a>
-                </div>
-                <div class="hero_item">
+                    <div class="hero_name">Pizza</div>
+                </a>
+                <a href="№" class="hero_item">
                     <div class="hero_photo">
                         <img class="hero_img" src="./main/burger.png" alt="">
                     </div>
-                    <a href="№" class="hero_name">Burger</a>
-                </div>
-                <div class="hero_item">
+                    <div class="hero_name">Burger</div>
+                </a>
+                <a href="#" class="hero_item">
                     <div class="hero_photo">
                         <img class="hero_img" src="./main/meat.png" alt="">
                     </div>
-                    <a href="#" class="hero_name">BBQ</a>
-                </div>
-                <div class="hero_item">
+                    <div class="hero_name">BBQ</div>
+                </a>
+                <a href="#" class="hero_item">
                     <div class="hero_photo">
                         <img class="hero_img" src="./main/sushi.png" alt="">
                     </div>
-                    <a href="#" class="hero_name">Sushi</a>
-                </div>
-                <div class="hero_item">
+                    <div class="hero_name">Sushi</div>
+                </a>
+                <a href="#" class="hero_item">
                     <div class="hero_photo">
                         <img class="hero_img" src="./main/vegan.png" alt="">
                     </div>
-                    <a href="#" class="hero_name">Vegan</a>
-                </div>
-                <div class="hero_item">
+                    <div class="hero_name">Vegan</div>
+                </a>
+                <a href="#" class="hero_item">
                     <div class="hero_photo">
                         <img class="hero_img" src="./main/keks.png" alt="">
                     </div>
-                    <a href="#" class="hero_name">Desserts</a>
-                </div> 
+                    <div class="hero_name">Desserts</div>
+                </a> 
             </div>
         </div>
     </section>
+    <header class="header__menu">
+        <div class="container">
+            <div class="header__navbar">
+                <div class="header__menu--left-side">
+                    <img class="header__menu--logo" src="./img/main_logo.svg" alt="Food delivery website logo" />
+
+                    <div class="header__menu--search">
+                        <input class="header__menu--search-input" type="text" placeholder="Search " />
+                        <i class="header__menu--search-icon fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="header__menu--right-side">
+                    <nav class="header__menu--link">
+                        <a class="menu_link" href="#">Restaurants</a>
+                        <a class="menu_link" href="#">Deals</a>
+                        <span class="header__menu--divider-vertical"></span>
+                        <a class="menu_link active" href="#">My orders</a>
+                    </nav>
+                    <div class="header__menu--icon">
+                        <a href="#"><img class="header__menu--icon-item" src="img/shopping bag.svg"
+                                alt="shopping bag icon" /></a>
+                        <span class="header__menu--icon-number">4</span>
+                    </div>
+                    <a href="#">
+                        <img class="header__menu--useravatar" src="img/useravatar.svg" alt="useravatar img" />
+                    </a>
+                    <span class="header__menu--divider-vertical"></span>
+                    <img class="header__menu--icon-mobile" src="img/menu.svg" alt=" header menu icon " />
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="default">
+        <div class="container_default">
+            <div class="default_left">
+                <div class="login_form">
+                    <h1 class="login_name">Login</h1>
+                    <label class="form_label" for="email">Email</label>
+                    <input class="input" placeholder="name@example.com" id="email" type="text" name="email">
+                    <label class="form_label" for="password">Password</label>
+                    <input class="input" placeholder="min.8 characters" id="password" type="text" name="password">
+
+                    <div class="chackbox">
+                        <div class="chackbox_sign"></div>
+                        <div class="chackbox_text">Keep me logged in</div>
+                    </div>
+
+                    <button class="button_logon">Login</button>
+                    <a href="#" class="button_forgot">Forgot password</a>
+                </div>
+
+                <div class="sign">
+                    <p>Don`t have an account?<a href="#" class="sign_inner"> Sign up</a></p> 
+                </div>
+
+            </div>
+            <div class="default_right">
+                <div class="default_inner">
+                    <h2 class="default_left--title">Strengthen the Guci`an bond</h2>
+                    <div class="default_left--text">Connecting Alumni and of Govermment engineering college idukki to a next level</div>
+                    
+                    <div class="circle">
+                        <div class="circle_inner">
+                            <div class="circle_item"></div>
+                            <div class="circle_item active"></div>
+                            <div class="circle_item"></div>
+                            <div class="circle_item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
