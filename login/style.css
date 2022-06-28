@@ -39,23 +39,26 @@ a {
 
 /* DEFAULT*/
 .default {
-    height: 100vh;
     margin: 0 auto;
     width: 100%;
 }
 
 .container_default {
-    display: flex;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /*DEFAULT_RIGHT*/
 .default_left {
+    display: flex;
+    max-width: 100%;
     margin: 0 auto;
-    width: 318px;
 }
 
 /* FORM*/
 .login_name {
+    width: 100%;
     font-size: 32px;
     line-height: 82px;
     font-family: 'Nunito';
@@ -258,6 +261,11 @@ a {
 
     .header__navbar {
         display: block;
+    }
+
+    .container_default {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .default_right {
