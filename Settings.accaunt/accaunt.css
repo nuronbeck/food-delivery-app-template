@@ -1,0 +1,38 @@
+/* Nunito font regular */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+
+/* Nunito font bold */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap');
+
+:root {
+    --primary: #4E60FF;
+    --primary-light: #F3F4FF;    
+    --white: #fff;
+    --dark: #2B2B43;
+    --grey: #83859C;
+    --grey-light: #C7C8D2;
+    --grey-lightest: #EDEEF2;
+    --error: #FF5C60;
+    --bluw-light: #697BFF;
+    --black: #545563;
+
+    --breakpoint-mobile: 768px;
+    --breakpoint-desktop: 1110px;
+}
+
+/* a:visited {
+    color: var(--black);
+} */
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Container*/
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--breakpoint-desktop);
+}
