@@ -24,153 +24,229 @@
 
 <body>
   <div class="container">
-    <section class="main">
-      <div class="card">
-        <div class="card__card--header">
-          <img class="card__card--image" src="img/CardImg1.svg" loading="lazy">
-        <h3 class="card__image--h1">FEATURED</h3>
+    <section class="products__list">
+      <div class="product__card">
+        <div class="card__preview" style="background-image: url(./img/products/img.jpg);">
+          <span class="card__preview--badge">Featured</span>
         </div>
         <div class="card__content">
-          <div class="card__content---top">
-            <h2 class="card__content---top-title">Royal Sushi House</h2>
-            <a href="#">
-              <img class="card__content---top-icon" src="img/shopping bag gray.svg" alt="Card Icon">
-            </a>
+          <div class="card__content-left">
+            <div class="card__content--title">Burgers & Pizza</div>
+            <div class="card__content--info">
+              <div class="card__content--cook-time">
+                <img src="./img/products/icons/clock.svg" alt="Cook time">
+                123
+              </div>
+
+              <span class="card__content--tag-dot"></span>
+
+              <div class="card__content--price">
+                $24 min sum
+              </div>
+            </div>
+            <div class="card__content--hashtags">
+              <span class="card__content--hashtag">
+                <img src="./img/products/icons/burger.svg" alt="Burger icon">
+                Burger
+              </span>
+              
+              <span class="card__content--hashtag">
+                <img src="./img/products/icons/pizza.svg" alt="Pizza icon">
+                Pizza
+              </span>
+            </div>
           </div>
-          <div class="card__content---bottom">
-            <img src="img/clock.svg" alt="clock icon">
-            <p class="card__content---bottom-text">
-              30-40 min
-              <span class="CirclePurple"></span>
-              $49 min sum
-            </p>
+          <div class="card__content-right">
+            <div class="card__content--bag">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 1.66669L2.5 5.00002V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1578 3.72464 18.3334 4.16667 18.3334H15.8333C16.2754 18.3334 16.6993 18.1578 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00002L15 1.66669H5Z" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.5 5H17.5" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.3333 8.33331C13.3333 9.21737 12.9821 10.0652 12.357 10.6903C11.7319 11.3155 10.8841 11.6666 10 11.6666C9.11595 11.6666 8.2681 11.3155 7.64298 10.6903C7.01786 10.0652 6.66667 9.21737 6.66667 8.33331" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+
+              <span class="card__content--bag-count">2</span>
+            </div>
           </div>
-          <button class="card__btn" type="button">
-            <img src="img/sushi.svg" alt="sushu btn image">
-            Sushi
-          </button>
         </div>
       </div>
-      <div class="card">
-        <div class="card__card--header">
-          <img class="card__card--image" src="img/Cardimg2.svg" loading="lazy">
-        <h3 class="card__image--h1">FEATURED</h3>
+
+      <div class="product__card">
+        <div class="card__preview" style="background-image: url(./img/products/food1.jpg);">
+          <span class="card__preview--badge">Featured</span>
         </div>
         <div class="card__content">
-          <div class="card__content---top">
-            <h2 class="card__content---top-title">Burgers & Pizza</h2>
-            <a href="#">
-              <img class="card__content---top-IconPurple" src="img/added.svg" alt="added bag icon">
-            </a>
+          <div class="card__content-left">
+            <div class="card__content--title">Burgers & Pizza</div>
+            <div class="card__content--info">
+              <div class="card__content--cook-time">
+                <img src="./img/products/icons/clock.svg" alt="Cook time">
+                123
+              </div>
+
+              <span class="card__content--tag-dot"></span>
+
+              <div class="card__content--price">
+                $24 min sum
+              </div>
+            </div>
+            <div class="card__content--hashtags">
+              <span class="card__content--hashtag">
+                <img src="./img/products/icons/burger.svg" alt="Burger icon">
+                Burger
+              </span>
+              
+              <span class="card__content--hashtag">
+                <img src="./img/products/icons/pizza.svg" alt="Pizza icon">
+                Pizza
+              </span>
+            </div>
           </div>
-          <div class="card__content---bottom">
-            <img src="img/clock.svg" alt="clock icon">
-            <p class="card__content---bottom-text">
-              30-40 min
-              <span></span>
-              $49 min sum
-            </p>
+          <div class="card__content-right">
+            <div class="card__content--bag">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 1.66669L2.5 5.00002V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1578 3.72464 18.3334 4.16667 18.3334H15.8333C16.2754 18.3334 16.6993 18.1578 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00002L15 1.66669H5Z" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.5 5H17.5" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.3333 8.33331C13.3333 9.21737 12.9821 10.0652 12.357 10.6903C11.7319 11.3155 10.8841 11.6666 10 11.6666C9.11595 11.6666 8.2681 11.3155 7.64298 10.6903C7.01786 10.0652 6.66667 9.21737 6.66667 8.33331" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+
+              <span class="card__content--bag-count">2</span>
+            </div>
           </div>
-          <button class="card__btn" type="button">
-            <img src="img/burger.svg" alt="burger btn image">
-            Burger
-          </button>
-          <button class="card__btn" type="button">
-            <img src="img/pizza.svg" alt="pizza btn image">
-            Pizza
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__card--image" src="img/Cardimg3.svg" loading="lazy">
-        <div class="card__content">
-          <div class="card__content---top">
-            <h2 class="card__content---top-title">Ninja sushi</h2>
-            <a href="#">
-              <img class="card__content---top-icon" src="img/shopping bag gray.svg" alt="Card Icon">
-            </a>
-          </div>
-          <div class="card__content---bottom">
-            <img src="img/clock.svg" alt="clock icon">
-            <p class="card__content---bottom-text">
-              30-40 min
-              <span></span>
-              $49 min sum
-            </p>
-          </div>
-          <button class="card__btn" type="button">
-            <img src="img/sushi.svg" alt="sushu btn image">
-            Sushi
-          </button>
         </div>
       </div>
-      <div class="card card__mobile">
-        <img class="card__card--image" src="img/cardimg4.svg" loading="lazy">
+
+      <div class="product__card">
+        <div class="card__preview" style="background-image: url(./img/products/food2.jpg);">
+          <span class="card__preview--badge">Featured</span>
+        </div>
         <div class="card__content">
-          <div class="card__content---top">
-            <h2 class="card__content---top-title">Sushi master</h2>
-            <a href="#">
-              <img class="card__content---top-icon" src="img/shopping bag gray.svg" alt="Card Icon">
-            </a>
+          <div class="card__content-left">
+            <div class="card__content--title">Burgers & Pizza</div>
+            <div class="card__content--info">
+              <div class="card__content--cook-time">
+                <img src="./img/products/icons/clock.svg" alt="Cook time">
+                123
+              </div>
+
+              <span class="card__content--tag-dot"></span>
+
+              <div class="card__content--price">
+                $24 min sum
+              </div>
+            </div>
+            <div class="card__content--hashtags">
+              <span class="card__content--hashtag">
+                <img src="./img/products/icons/burger.svg" alt="Burger icon">
+                Burger
+              </span>
+              
+              <span class="card__content--hashtag">
+                <img src="./img/products/icons/pizza.svg" alt="Pizza icon">
+                Pizza
+              </span>
+            </div>
           </div>
-          <div class="card__content---bottom">
-            <img src="img/clock.svg" alt="clock icon">
-            <p class="card__content---bottom-text">
-              30-40 min
-              <span></span>
-              $49 min sum
-            </p>
+          <div class="card__content-right">
+            <div class="card__content--bag">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 1.66669L2.5 5.00002V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1578 3.72464 18.3334 4.16667 18.3334H15.8333C16.2754 18.3334 16.6993 18.1578 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00002L15 1.66669H5Z" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.5 5H17.5" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.3333 8.33331C13.3333 9.21737 12.9821 10.0652 12.357 10.6903C11.7319 11.3155 10.8841 11.6666 10 11.6666C9.11595 11.6666 8.2681 11.3155 7.64298 10.6903C7.01786 10.0652 6.66667 9.21737 6.66667 8.33331" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+
+              <span class="card__content--bag-count">2</span>
+            </div>
           </div>
-          <button class="card__btn" type="button">
-            <img src="img/sushi.svg" alt="sushu btn image">
-            Sushi
-          </button>
         </div>
       </div>
-      <div class="card card__mobile">
-        <img class="card__card--image" src="img/cardimg5.svg" loading="lazy">
+
+      <div class="product__card">
+        <div class="card__preview" style="background-image: url(./img/products/food2.jpg);">
+          <span class="card__preview--badge">Featured</span>
+        </div>
         <div class="card__content">
-          <div class="card__content---top">
-            <h2 class="card__content---top-title">Japanese sushi</h2>
-            <a href="#">
-              <img class="card__content---top-icon" src="img/shopping bag gray.svg" alt="Card Icon">
-            </a>
+          <div class="card__content-left">
+            <div class="card__content--title">Burgers & Pizza</div>
+            <div class="card__content--info">
+              <div class="card__content--cook-time">
+                <img src="./img/products/icons/clock.svg" alt="Cook time">
+                123
+              </div>
+
+              <span class="card__content--tag-dot"></span>
+
+              <div class="card__content--price">
+                $24 min sum
+              </div>
+            </div>
+            <div class="card__content--hashtags">
+              <span class="card__content--hashtag">
+                <img src="./img/products/icons/burger.svg" alt="Burger icon">
+                Burger
+              </span>
+              
+              <span class="card__content--hashtag">
+                <img src="./img/products/icons/pizza.svg" alt="Pizza icon">
+                Pizza
+              </span>
+            </div>
           </div>
-          <div class="card__content---bottom">
-            <img src="img/clock.svg" alt="clock icon">
-            <p class="card__content---bottom-text">
-              30-40 min
-              <span></span>
-              $49 min sum
-            </p>
+          <div class="card__content-right">
+            <div class="card__content--bag">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 1.66669L2.5 5.00002V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1578 3.72464 18.3334 4.16667 18.3334H15.8333C16.2754 18.3334 16.6993 18.1578 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00002L15 1.66669H5Z" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.5 5H17.5" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.3333 8.33331C13.3333 9.21737 12.9821 10.0652 12.357 10.6903C11.7319 11.3155 10.8841 11.6666 10 11.6666C9.11595 11.6666 8.2681 11.3155 7.64298 10.6903C7.01786 10.0652 6.66667 9.21737 6.66667 8.33331" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+
+              <span class="card__content--bag-count">2</span>
+            </div>
           </div>
-          <button class="card__btn" type="button">
-            <img src="img/sushi.svg" alt="sushu btn image">
-            Sushi
-          </button>
         </div>
       </div>
-      <div class="card card__mobile">
-        <img class="card__card--image" src="img/cardimg6.svg" loading="lazy">
+
+      <div class="product__card">
+        <div class="card__preview" style="background-image: url(./img/products/food2.jpg);">
+          <span class="card__preview--badge">Featured</span>
+        </div>
         <div class="card__content">
-          <div class="card__content---top">
-            <h2 class="card__content---top-title">Kobe</h2>
-            <a href="#">
-              <img class="card__content---top-icon" src="img/shopping bag gray.svg" alt="Card Icon">
-            </a>
+          <div class="card__content-left">
+            <div class="card__content--title">Burgers & Pizza</div>
+            <div class="card__content--info">
+              <div class="card__content--cook-time">
+                <img src="./img/products/icons/clock.svg" alt="Cook time">
+                123
+              </div>
+
+              <span class="card__content--tag-dot"></span>
+
+              <div class="card__content--price">
+                $24 min sum
+              </div>
+            </div>
+            <div class="card__content--hashtags">
+              <span class="card__content--hashtag">
+                <img src="./img/products/icons/burger.svg" alt="Burger icon">
+                Burger
+              </span>
+              
+              <span class="card__content--hashtag">
+                <img src="./img/products/icons/pizza.svg" alt="Pizza icon">
+                Pizza
+              </span>
+            </div>
           </div>
-          <div class="card__content---bottom">
-            <img src="img/clock.svg" alt="clock icon">
-            <p class="card__content---bottom-text">
-              30-40 min
-              <span></span>
-              $49 min sum
-            </p>
+          <div class="card__content-right">
+            <div class="card__content--bag">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 1.66669L2.5 5.00002V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1578 3.72464 18.3334 4.16667 18.3334H15.8333C16.2754 18.3334 16.6993 18.1578 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00002L15 1.66669H5Z" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.5 5H17.5" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.3333 8.33331C13.3333 9.21737 12.9821 10.0652 12.357 10.6903C11.7319 11.3155 10.8841 11.6666 10 11.6666C9.11595 11.6666 8.2681 11.3155 7.64298 10.6903C7.01786 10.0652 6.66667 9.21737 6.66667 8.33331" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+
+              <span class="card__content--bag-count">2</span>
+            </div>
           </div>
-          <button class="card__btn" type="button">
-            <img src="img/sushi.svg" alt="sushu btn image">
-            Sushi
-          </button>
         </div>
       </div>
     </section>
