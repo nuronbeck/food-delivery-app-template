@@ -39,23 +39,27 @@ a {
 
 /* DEFAULT*/
 .default {
-    height: 100vh;
     margin: 0 auto;
     width: 100%;
 }
 
-.container_default {
-    display: flex;
+.login_container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-/*DEFAULT_RIGHT*/
-.default_left {
+/*BLOCK_LIFT-SIDE*/
+.block_left-side {
+    display: grid;
+    grid-template-columns: (1, 1fr);
+    width: 50%;
     margin: 0 auto;
-    width: 318px;
 }
 
 /* FORM*/
 .login_name {
+    width: 100%;
     font-size: 32px;
     line-height: 82px;
     font-family: 'Nunito';
@@ -66,7 +70,7 @@ a {
     color: var(--dark);
 }
 
-.form_label {
+.login_label {
     margin-bottom: 5px;
     width: 100%;
     display: block;
@@ -79,7 +83,7 @@ a {
     color: var(--black);
 }
 
-.input {
+.login_input {
     width: 100%;
     margin-bottom: 30px;
     padding-left: 10px;
@@ -115,7 +119,7 @@ a {
     color: var(--dark);
 }
 
-.button_logon {
+.button_login {
     width: 100%;
     margin-bottom: 35px;
     padding: 12px 16px;
@@ -136,7 +140,7 @@ a {
     box-shadow: 0 8px 20px rgba(78, 96, 255, 0.16);
 }
 
-.button_logon:hover {
+.button_login:hover {
     background-color: var(--bluw-light);
 }
 
@@ -177,25 +181,25 @@ a {
 }
 
 
-/*DEFAULT_LEFT*/
-.default_right {
-    max-width: 800px;
+/*BLOCK_RIGHT-SIDE*/
+.block_right-side {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    
+    background-color: var(--primary);
+}
+
+.block_right-inner {
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: end;
-
-    background-color: var(--primary);
-}
-
-.default_inner {
-    max-width: 480px;
-    width: 100%;
     margin: 0 auto;
 }
 
-.default_left--title {
+.block_right--title {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
@@ -205,7 +209,7 @@ a {
     color: var(--white);
 }
 
-.default_left--text {
+.block_right--text {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
@@ -260,7 +264,12 @@ a {
         display: block;
     }
 
-    .default_right {
+    .login_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .block_right-side {
         display: none;
     }
 }
