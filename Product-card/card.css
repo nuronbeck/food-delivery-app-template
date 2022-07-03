@@ -37,11 +37,6 @@
     .container {
         padding: 0 15px;
     }
-    .main{
-        display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 3fr;
-    }
     .card__mobile{
         display: none;
     }
@@ -49,10 +44,11 @@ grid-template-rows: 3fr;
 
 /* cards section */
 .main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     grid-gap: 30px;
-    padding: 106px 165px;
+    padding-top: 112px;
 }
 
 .card {
