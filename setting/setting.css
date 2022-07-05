@@ -154,7 +154,12 @@
 
 /* setting section */
 .settings {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.setting__left--side {
+    margin-right: 30px;
 }
 
 .setting__left--side-title {
@@ -192,10 +197,15 @@
     margin-left: 16px;
 }
 
+.settings_account-inner:hover path {
+    stroke: white;
+}
+
 .settings_account-inner:hover .account_img {
     background: #4E60FF;
     border-radius: 12px;
 }
+
 
 .settings__left--account-content {
     padding: 16px 16px 16px 12px;
@@ -233,8 +243,8 @@
     background: #FFFFFF;
     border: 1px solid #EDEEF2;
     border-radius: 16px;
-    margin-left: 30px;
-    padding-left: 16px;
+    padding: 16px;
+    margin-bottom: 24px;
 }
 
 .setting__right--side-InnerTxt {
@@ -299,7 +309,8 @@
 
 .input-box {
     width: 341px;
-    padding: 2px 16px 32px 0;
+    padding-bottom: 32px;
+    padding-right: 16px;
 }
 
 .input-box label {
@@ -326,6 +337,11 @@
     margin-top: 4px;
 }
 
+.setting__right--side-notice {
+    margin-bottom: 36px;
+    border-bottom: 1px solid var(--grey-lightest) !important;
+}
+
 form {
     display: flex;
 }
@@ -344,7 +360,7 @@ input[type=checkbox] {
 
 input[type=checkbox]+label {
     font-family: 'Nunito', sans-serif;
-    margin-top: 24px;
+    margin-bottom: 24px;
     min-width: 341px;
     font-weight: 400;
     font-size: 14px;
@@ -373,6 +389,67 @@ input[type=checkbox]+label:active:before {
 input[type=checkbox]:checked+label:before {
     background: var(--primary);
     color: var(--white);
+}
+
+.setting__right--btn {
+    display: grid;
+    grid-template-columns: 5fr 3fr 2fr;
+    margin-bottom: 20px;
+}
+
+.LogOutBtn {
+    border-radius: 8px;
+    border: 1px solid var(--error);
+    padding: 12px 16px;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: var(--error);
+    cursor: pointer;
+}
+.LogOutBtn:hover{
+    color: var(--white);
+    background: var(--error);
+}
+.DiscardBtn {
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--grey);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+}
+.DiscardBtn:hover{
+    color: var(--white);
+    background: var(--grey);
+}
+
+.SaveBtn {
+    background: var(--primary);
+    box-shadow: 0px 8px 20px rgba(78, 96, 255, 0.16);
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    padding: 12px 16px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.SaveBtn:hover{
+    background: transparent;
+    border-color: #4E60FF;
+    color: var(--primary);
 }
 
 
@@ -428,5 +505,15 @@ input[type=checkbox]:checked+label:before {
     .header__menu--icon-mobile:hover {
         border: 1px solid var(--primary);
     }
-
+    /* setting account mobile style */
+    .setting{
+       
+    }
+    .setting__left--side{
+       
+       
+    }
+    .setting__right--side{
+        
+    }
 }
