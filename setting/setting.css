@@ -155,7 +155,7 @@
 /* setting section */
 .settings {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .setting__left--side {
@@ -236,7 +236,6 @@
     line-height: 28px;
     letter-spacing: 0.1px;
     color: #2B2B43;
-    padding-left: 30px;
 }
 
 .setting__right--side-inner {
@@ -303,12 +302,12 @@
 }
 
 .setting__right--side-input {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .input-box {
-    width: 341px;
+    width: 100%;
     padding-bottom: 32px;
     padding-right: 16px;
 }
@@ -339,11 +338,12 @@
 
 .setting__right--side-notice {
     margin-bottom: 36px;
-    border-bottom: 1px solid var(--grey-lightest) !important;
+    border-bottom: 1px solid var(--grey-lightest);
 }
 
 form {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .setting__right--side-inputNoticeLeft {
@@ -411,10 +411,12 @@ input[type=checkbox]:checked+label:before {
     color: var(--error);
     cursor: pointer;
 }
-.LogOutBtn:hover{
+
+.LogOutBtn:hover {
     color: var(--white);
     background: var(--error);
 }
+
 .DiscardBtn {
     border: 1px solid var(--grey);
     border-radius: 8px;
@@ -427,7 +429,8 @@ input[type=checkbox]:checked+label:before {
     letter-spacing: 0.3px;
     cursor: pointer;
 }
-.DiscardBtn:hover{
+
+.DiscardBtn:hover {
     color: var(--white);
     background: var(--grey);
 }
@@ -446,7 +449,8 @@ input[type=checkbox]:checked+label:before {
     color: #FFFFFF;
     cursor: pointer;
 }
-.SaveBtn:hover{
+
+.SaveBtn:hover {
     background: transparent;
     border-color: #4E60FF;
     color: var(--primary);
@@ -505,15 +509,57 @@ input[type=checkbox]:checked+label:before {
     .header__menu--icon-mobile:hover {
         border: 1px solid var(--primary);
     }
+
     /* setting account mobile style */
-    .setting{
-       
+    .settings {
+        grid-template-columns: repeat(1, 1fr);
+
     }
-    .setting__left--side{
-       
-       
+
+    .setting__right--side-input {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .setting__right--side{
-        
+
+    .input-box {
+        width: 100%;
     }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .setting__right--btn {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .setting__right--mobile-btn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .setting__right--side-notice {
+        border-bottom: none;
+    }
+
+    .LogOutBtn {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .setting__right--btn-border {
+        border: 1px solid var(--grey-lightest);
+        margin-bottom: 20px;
+    }
+
+    .DiscardBtn {
+        width: 100%;
+    }
+
+    .SaveBtn {
+        width: 100%;
+    }
+
 }
