@@ -1,0 +1,631 @@
+/* Nunito font regular */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+
+/* Nunito font bold */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap');
+
+:root {
+    --primary-light: #4E60FF;
+    --primary-light: #F3F4FF;    
+    --white: #fff;
+    --dark: #2B2B43;
+    --grey: #83859C;
+    --grey-light: #C7C8D2;
+    --grey-lightest: #EDEEF2;
+    --error: #FF5C60;
+    --bluw-light: #697BFF;
+    --black: #545563;
+
+    --breakpoint-mobile: 768px;
+    --breakpoint-desktop: 1110px;
+}
+
+/* a:visited {
+    color: var(--black);
+} */
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Container*/
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--breakpoint-desktop);
+}
+
+.header__menu {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--primary-light);
+}
+
+.header__menu--left-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header__menu--logo {
+    width: 79px;
+    height: 40px;
+}
+
+.header__menu--search {
+    position: relative;
+    margin-left: 48px;
+}
+
+.header__menu--search-input {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    background-color: var(--grey-lightest);
+    padding: 10px 12px;
+    padding-right: calc((12px * 2) + 16px);
+    border-radius: 12px;
+    border: none;
+    outline-color: var(--primary);
+    height: 40px;
+    min-width: 224px;
+    box-sizing: border-box;
+}
+
+.header__menu--search-icon {
+    position: absolute;
+    color: var(--grey);
+    width: 16px;
+    height: 16px;
+    top: calc((40px - 16px) / 2);
+    right: calc((40px - 16px) / 2);
+}
+
+/*  Here you can define styles how to create menu right side  */
+
+.header__menu--right-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__menu--link {
+    display: flex;
+    align-items: center;
+}
+
+.menu_link {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--dark);
+    list-style: none;
+    margin: 0 28px;
+}
+
+.menu_link:hover {
+    color: var(--primary);
+    transition: .5s;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu--divider-vertical {
+    height: 32px;
+    border-right: 1px solid var(--grey-lightest);
+}
+
+.header__menu--icon {
+    position: relative;
+    margin-right: 12px;
+}
+
+.header__menu--icon-item {
+    background-color: var(--primary-light);
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.header__menu--icon-number {
+    position: absolute;
+    background-color: #4E60FF;
+    border-radius: 8px;
+    padding: 2px 6px;
+    color: var(--white);
+    right: -6px;
+    top: -6px;
+}
+
+.header__menu--useravatar {
+    border: 2px solid #EDEEF2;
+    border-radius: 16px;
+    padding: 2px;
+}
+
+.header__menu--icon-mobile {
+    display: none;
+}
+
+
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+.main_big-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.block_settings--side {
+    /* min-width: 350px;
+    height: 324px; */
+    margin: 0 30px 0 0;
+}
+
+.block_settings--name {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.settings_block--item {
+    display: flex;
+    padding: 15px 0;
+    margin: 12px 0;
+    align-items: center;
+    outline-color: var(--primary);
+
+    border: 2px solid var(--grey-lightest);
+    border-radius: 16px;
+    background-color: var(--white);
+    transition: background .1s linear,
+    color .1s linear;
+}
+
+.settings_block--item:hover {
+    background: var(--primary-light);
+    border: 2px solid #4E60FF;
+}
+
+.settings_block--icon {
+    height: 40px;
+    width: 40px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    border-radius: 12px;
+    background-color: var(--grey-lightest);
+    transition: background .1s linear;
+}
+
+.settings_block--icon:hover {
+    background: #4E60FF;
+    transition: background .1s linear;
+}
+
+.settings_icon--user {
+    color: var(--grey);
+}
+
+.settings_icon--user:hover {
+    color: #ffff;
+}
+
+.settings_inner-block--content{
+    margin-left: 12px;
+}
+
+.settings_user--name{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--dark);
+}
+
+.settings_foruser-information {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--black);
+}
+
+
+
+.block_account--side {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 730px;
+    height: 688px;
+}
+
+.block_account-name {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.block_account--personal--information {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+   
+}
+
+.block_account--container {
+    padding: 15px;
+    border-radius: 16px;
+    border: 2px solid var(--grey-lightest);
+    background-color: var(--white);
+}
+
+.avatar_user--name {
+    margin-bottom: 8px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--black);
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.avatar_img {
+    width: 88px;
+    height: 88px;
+    margin-right: 30px;
+    border-radius: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.avatar_change {
+    margin-right: 8px;
+    width: 83px;
+    height: 44px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--grey);
+    background-color: var(--white);
+    border: 0;
+}
+
+.avatar_change:hover {
+    padding: 10px;
+    border-radius: 8px;
+    color: #4E60FF;
+    border: 1px solid #4E60FF;
+}
+
+.avatar_remove {
+    width: 83px;
+    height: 44px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--grey); 
+    background-color: var(--white);
+    border: 0;
+}
+
+.avatar_remove:hover {
+    padding: 10px;
+    border-radius: 8px;
+    color: #4E60FF;
+    border: 1px solid #4E60FF;
+}
+
+.auth_form--block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px 10px;
+}
+
+.label_user {
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--black);
+}
+
+.input_user {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    padding-left: 12px;
+    color: var(--black);
+    margin-top: 5px;
+    width: 341px;
+    height: 44px;
+    border: 1px solid var(--grey-light);
+    border-radius: 8px;
+}
+
+
+.email {
+    margin: 50px auto 0;
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid var(--grey-lightest);
+}
+
+.email_name {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--dark);
+}
+
+.email_notifications--big--block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.email_notifications--item {
+    display: flex;
+    margin: 12px 0;
+}
+
+.email_notifications--input {
+    width: 20px;
+    height: 20px;
+}
+
+.email_user--title {
+    margin-left: 12px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--dark);
+}
+
+.crt {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 0;
+}
+
+.crt_btn--logout {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.btn_logout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    width: 84px;
+    height: 44px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--error);
+
+    background-color: var(--white);
+    border: 1px solid var(--error);
+    border-radius: 8px;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn_logout:hover {
+    color: var(--white);
+    background: var(--error);
+    box-shadow: 0px 8px 20px rgba(78, 96, 255, 0.16);
+    border-radius: 8px;
+}
+
+.crt_inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.discard_changes {
+    margin-right: 15px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: var(--grey);
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+    
+    transition: background .1s linear, color .1s linear;
+}
+
+.discard_changes:hover {
+    color: var(--white);
+    background: #4E60FF;
+    box-shadow: 0px 8px 20px rgba(78, 96, 255, 0.16);
+    border-radius: 8px;
+}
+
+.sava_changes {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: var(--grey);
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+    
+    transition: background .1s linear, color .1s linear;
+}
+
+.sava_changes:hover {
+    color: var(--white);
+    background: #4E60FF;
+    box-shadow: 0px 8px 20px rgba(78, 96, 255, 0.16);
+    border-radius: 8px;
+}
+
+
+/* Here you can define styles how to change on mobile  */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .header__menu--search {
+        display: none;
+    }
+
+    .header__menu--logo {
+        padding-left: 15px;
+    }
+
+    .header__menu--link {
+        display: none;
+    }
+
+    .header__navbar {
+        display: flex;
+    }
+
+    .header__menu--icon {
+        margin-left: 59px;
+    }
+
+    .header__menu--useravatar {
+        border: 2px solid var(--primary);
+        margin-left: 12px;
+    }
+
+    .header__menu--divider-vertical {
+        margin: 0 19px;
+        border: 1px solid var(--grey-lightest);
+        height: 32px;
+        color: var(--grey);
+    }
+
+    .header__menu--icon-mobile {
+        display: block;
+        background: #EDEEF2;
+        border-radius: 16px;
+        padding: 14px;
+        cursor: pointer;
+        border: 1px solid var(--white);
+    }
+
+    .header__menu--icon-mobile:hover {
+        border: 1px solid var(--primary);
+    }
+
+    .accaunt_settings--big-block {
+        display: block;
+    }
+
+    .auth_form--block {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .label_user {
+        display: block;
+    }
+
+    .email_notifications--big--block {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main_big-block {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .email {
+        border-bottom: 0;
+    }
+
+    .crt {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .btn_logout {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 12px 16px;
+        gap: 8px;
+        max-width: 330px;
+        width: 100%;
+        height: 44px;
+    }
+
+    .crt_btn--logout {
+        border-bottom: 1px solid var(--grey-lightest);
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .crt_inner {
+        max-width: 330px;
+        width: 100%;
+    }
+
+    .discard_changes {
+        height: 44px;
+    }
+
+    .sava_changes {
+        height: 44px;
+    }
+}
