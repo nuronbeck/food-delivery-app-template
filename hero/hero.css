@@ -1,11 +1,9 @@
-/* *, 
+*, 
 *::before,
 *::after {
     box-sizing: border-box;
-} */
-body {
-    background-color: #2B2B43
 }
+
 /* Nunito font regular */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
 
