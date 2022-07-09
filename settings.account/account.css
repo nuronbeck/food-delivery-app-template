@@ -160,7 +160,6 @@ a {
 
 
 .section {
-    width: 100%;
     height: 100vh;
 }
 
@@ -169,10 +168,14 @@ a {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.block_settings--side {
-    /* min-width: 350px;
-    height: 324px; */
-    margin: 0 30px 0 0;
+.block_settings--right-side {
+    display: grid;
+    grid-template-columns: var(1, 1fr);
+}
+
+.block_settings--inner {
+    max-width: 350px;
+    width: 100%;
 }
 
 .block_settings--name {
@@ -185,16 +188,16 @@ a {
 
 .settings_block--item {
     display: flex;
-    padding: 15px 0;
-    margin: 12px 0;
     align-items: center;
+    padding: 15px 0;
+    margin: 12px 0; 
     outline-color: var(--primary);
 
     border: 2px solid var(--grey-lightest);
     border-radius: 16px;
     background-color: var(--white);
-    transition: background .1s linear,
-    color .1s linear;
+
+    transition: background .1s linear, color .1s linear;
 }
 
 .settings_block--item:hover {
@@ -253,10 +256,14 @@ a {
 
 
 
-.block_account--side {
+.block_account--left-side {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: var(1, 1fr);
+}
+
+.block_account--inner {
     max-width: 730px;
+    width: 100%;
     height: 688px;
 }
 
@@ -297,7 +304,6 @@ a {
 .avatar {
     display: flex;
     align-items: center;
-    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -313,7 +319,8 @@ a {
 
 .avatar_change {
     margin-right: 8px;
-    width: 83px;
+    max-width: 83px;
+    width: 100%;
     height: 44px;
     font-family: 'Nunito';
     font-style: normal;
@@ -333,7 +340,8 @@ a {
 }
 
 .avatar_remove {
-    width: 83px;
+    max-width: 83px;
+    width: 100%;
     height: 44px;
     font-family: 'Nunito';
     font-style: normal;
@@ -352,13 +360,13 @@ a {
 }
 
 .auth_form--block {
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 25px 10px;
+    grid-gap: 26px 16px;
 }
 
 .label_user {
-    
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 600;
@@ -377,7 +385,7 @@ a {
     padding-left: 12px;
     color: var(--black);
     margin-top: 5px;
-    width: 341px;
+    min-width: 320px;
     height: 44px;
     border: 1px solid var(--grey-light);
     border-radius: 8px;
@@ -385,7 +393,6 @@ a {
 
 
 .email {
-    margin: 50px auto 0;
     padding-bottom: 20px;
     width: 100%;
     border-bottom: 1px solid var(--grey-lightest);
@@ -568,64 +575,40 @@ a {
         border: 1px solid var(--primary);
     }
 
-    .accaunt_settings--big-block {
-        display: block;
-    }
 
-    .auth_form--block {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .label_user {
-        display: block;
-    }
-
-    .email_notifications--big--block {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
 
     .main_big-block {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .email {
-        border-bottom: 0;
-    }
 
-    .crt {
-        grid-template-columns: repeat(1, 1fr);
-    }
 
-    .btn_logout {
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 12px 16px;
-        gap: 8px;
-        max-width: 330px;
-        width: 100%;
-        height: 44px;
-    }
 
-    .crt_btn--logout {
-        border-bottom: 1px solid var(--grey-lightest);
-        margin-bottom: 20px;
-        width: 100%;
+    .block_settings--right-side {
+        display: grid;
+        grid-template-columns: var(1, 1fr);
     }
-
-    .crt_inner {
+    
+    .block_settings--inner {
         max-width: 330px;
         width: 100%;
     }
 
-    .discard_changes {
-        height: 44px;
-    }
 
-    .sava_changes {
-        height: 44px;
+
+
+
+    .block_account--left-side {
+        display: grid;
+        grid-template-columns: var(1, 1fr);
     }
+    
+    .block_account--inner {
+        max-width: 330px;
+        width: 100%;
+    }
+    
+
+  
 }

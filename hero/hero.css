@@ -45,7 +45,6 @@ a {
 
 /*HERO*/
 .hero {
-    display: none;
     max-width: var(--breakpoint-desktop);
     width: 100%;
     margin: 0 auto;
@@ -70,7 +69,7 @@ a {
 }
 
 .hero_item:hover {
-    border: 1px solid var(--bluw);
+    border: 1px solid var(--primary);
     cursor: pointer;
     background-color: var(--grey-lightest);
 }
