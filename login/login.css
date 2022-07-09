@@ -38,7 +38,7 @@ a {
 }
 
 /* DEFAULT*/
-.default {
+.login {
     margin: 0 auto;
     width: 100%;
 }
@@ -51,13 +51,17 @@ a {
 
 /*BLOCK_LIFT-SIDE*/
 .block_left-side {
-    display: grid;
-    grid-template-columns: (1, 1fr);
-    width: 50%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* FORM*/
+.auth_form {
+    max-width: 350px;
+    width: 100%;
+}
+
 .login_name {
     width: 100%;
     font-size: 32px;
