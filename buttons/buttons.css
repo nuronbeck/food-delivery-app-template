@@ -1,0 +1,87 @@
+/* Nunito font regular */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+
+/* Nunito font bold */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap');
+
+:root {
+    --primary: #4E60FF;
+    --primary-light: #F3F4FF;
+    --white: #fff;
+    --dark: #2B2B43;
+    --grey: #83859C;
+    --grey-light: #C7C8D2;
+    --grey-lightest: #EDEEF2;
+    --error: #FF5C60;
+
+    --breakpoint-mobile: 768px;
+    --breakpoint-desktop: 1110px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--breakpoint-desktop);
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Nunito';
+  font-weight: bold;
+  padding: 12px 16px;
+  border-radius: 8px;
+
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+  transition: box-shadow .15s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+.btn-primary {
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+}
+
+.btn-danger {
+  color: var(--white);
+  background-color: var(--error);
+  border: none;
+}
+
+.btn-danger-outline {
+  color: var(--error);
+  background-color: var(--white);
+  border: 1px solid var(--error);
+  box-shadow: none;
+}
+
+
+
+.btn:disabled {
+  cursor: not-allowed;
+  color: var(--grey);
+  background-color: var(--white);
+  border: 1px solid var(--grey);
+  box-shadow: none;
+}
+
+/* Here you can define styles how to change on mobile  */
+@media screen and (max-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+}
