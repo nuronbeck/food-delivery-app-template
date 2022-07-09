@@ -549,14 +549,14 @@ input[type=checkbox]:checked+label:before {
         border-bottom: none;
     }
 
-    .LogOutBtn {
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
     .setting__right--btn-border {
         border: 1px solid var(--grey-lightest);
         margin-bottom: 20px;
+    }
+
+    .LogOutBtn {
+        margin-bottom: 20px;
+        width: 100%;
     }
 
     .DiscardBtn {

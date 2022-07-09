@@ -69,8 +69,6 @@
   box-shadow: none;
 }
 
-
-
 .btn:disabled {
   cursor: not-allowed;
   color: var(--grey);
