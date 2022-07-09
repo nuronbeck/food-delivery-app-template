@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Delivery</title>
+  <!-- Normalize default styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Main styles -->
+  <link rel="stylesheet" href="./setting.css">
+</head>
+
+<body>
+  <header class="header__menu">
+    <div class="container">
+      <div class="header__navbar">
+        <div class="header__menu--left-side">
+          <img class="header__menu--logo" src="./img/main_logo.svg" alt="Food delivery website logo" />
+
+          <div class="header__menu--search">
+            <input class="header__menu--search-input" type="text" placeholder="Search " />
+            <i class="header__menu--search-icon fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="header__menu--right-side">
+          <nav class="header__menu--link">
+            <a class="menu_link" href="#">Restaurants</a>
+            <a class="menu_link" href="#">Deals</a>
+            <span class="header__menu--divider-vertical"></span>
+            <a class="menu_link active" href="#">My orders</a>
+          </nav>
+          <div class="header__menu--icon">
+            <a href="#"><img class="header__menu--icon-item" src="img/shopping bag.svg" alt="shopping bag icon" /></a>
+            <span class="header__menu--icon-number">4</span>
+          </div>
+          <a href="#">
+            <img class="header__menu--useravatar" src="img/useravatar.svg" alt="useravatar img" />
+          </a>
+          <span class="header__menu--divider-vertical"></span>
+          <img class="header__menu--icon-mobile" src="img/menu.svg" alt=" header menu icon " />
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="setting">
+    <div class="container">
+      <div class="settings">
+        <div class="setting__left--side">
+          <h3 class="setting__left--side-title">Settings</h3>
+          <a class="settings_account-inner" href="#">
+            <div class="account_img">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.6666 17.5V15.8333C16.6666 14.9493 16.3155 14.1014 15.6903 13.4763C15.0652 12.8512 14.2174 12.5 13.3333 12.5H6.66665C5.78259 12.5 4.93474 12.8512 4.30962 13.4763C3.6845 14.1014 3.33331 14.9493 3.33331 15.8333V17.5" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.99996 9.16667C11.8409 9.16667 13.3333 7.67428 13.3333 5.83333C13.3333 3.99238 11.8409 2.5 9.99996 2.5C8.15901 2.5 6.66663 3.99238 6.66663 5.83333C6.66663 7.67428 8.15901 9.16667 9.99996 9.16667Z" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="settings__left--account-content">
+              <div class="settings__left--account-name">Account</div>
+              <div class="settings__left--account-txt">Personal information</div>
+            </div>
+          </a>
+          <a class="settings_account-inner" href="#">
+            <div class="account_img">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5 8.33333C17.5 14.1667 10 19.1667 10 19.1667C10 19.1667 2.5 14.1667 2.5 8.33333C2.5 6.3442 3.29018 4.43655 4.6967 3.03003C6.10322 1.6235 8.01088 0.833328 10 0.833328C11.9891 0.833328 13.8968 1.6235 15.3033 3.03003C16.7098 4.43655 17.5 6.3442 17.5 8.33333Z" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 10.8333C11.3807 10.8333 12.5 9.71404 12.5 8.33333C12.5 6.95262 11.3807 5.83333 10 5.83333C8.61929 5.83333 7.5 6.95262 7.5 8.33333C7.5 9.71404 8.61929 10.8333 10 10.8333Z" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+            </div>
+            <div class="settings__left--account-content">
+              <div class="settings__left--account-name">Address</div>
+              <div class="settings__left--account-txt">Shippings addresses</div>
+            </div>
+          </a>
+          <a class="settings_account-inner" href="#">
+            <div class="account_img">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5 3.33334H2.49998C1.5795 3.33334 0.833313 4.07953 0.833313 5V15C0.833313 15.9205 1.5795 16.6667 2.49998 16.6667H17.5C18.4205 16.6667 19.1666 15.9205 19.1666 15V5C19.1666 4.07953 18.4205 3.33334 17.5 3.33334Z" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M0.833313 8.33334H19.1666" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+            </div>
+            <div class="settings__left--account-content">
+              <div class="settings__left--account-name">Payment method</div>
+              <div class="settings__left--account-txt">Connected credit cards</div>
+            </div>
+          </a>
+          <a class="settings_account-inner" href="#">
+            <div class="account_img">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.99998 18.3333C9.99998 18.3333 16.6666 15 16.6666 10V4.16667L9.99998 1.66667L3.33331 4.16667V10C3.33331 15 9.99998 18.3333 9.99998 18.3333Z" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+            </div>
+            <div class="settings__left--account-content">
+              <div class="settings__left--account-name">Security</div>
+              <div class="settings__left--account-txt">Password, 2FA</div>
+            </div>
+          </a>
+        </div>
+        <div class="setting__right--side">
+          <h3 class="setting__right--side-title">Account</h3>
+          <div class="setting__right--side-inner">
+            <h2 class="setting__right--side-InnerTxt">Personal information</h2>
+            <p class="setting__right--side-ImgTxt">Avatar</p>
+            <div class="setting__right--side-ChangeUserImg">
+              <img class="setting__right--side-UserImg" src="./img/account avatar.svg" alt="account avatar">
+              <button class="setting__right--side-btnChange" type="button">Change</button>
+              <button class="setting__right--side-btnRemove">Remove</button>
+            </div>
+            <div class="setting__right--side-input">
+              <div class="input-box">
+                <label for="name">First Name</label>
+                <input type="text" name="name" id="name" required placeholder="Jane">
+              </div>
+              <div class="input-box">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" required placeholder="Robertson">
+              </div>
+              <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="jane.robertson@example.com">
+              </div>
+              <div class="input-box">
+                <label for="number">Phone number</label>
+                <input type="number" name="number" id="number" required placeholder="(217) 555-0113">
+              </div>
+            </div>
+            <div class="setting__right--side-notice">
+              <h3 class="setting__right--side-InnerTxt">Email notifications</h3>
+              <form action="#">
+                <div class="setting__right--side-inputNoticeLeft">
+                  <input type="checkbox" id="notice1" name="notice1" value="f1">
+                  <label for="notice1">New deals</label>
+                  <input type="checkbox" id="notice2" name="notice1" value="f2">
+                  <label for="notice2">New restaurants</label>
+                  <input type="checkbox" id="notice3" name="notice1" value="f3">
+                  <label for="notice3">Order statuses</label>
+                </div>
+                <div class="setting__right--side-inputNoticeRight">
+                  <input type="checkbox" id="notice4" name="notice1" value="f4">
+                  <label for="notice4">Password changes</label>
+                  <input type="checkbox" id="notice5" name="notice1" value="f5">
+                  <label for="notice5">Special offers</label>
+                  <input type="checkbox" id="notice6" name="notice1" value="f6">
+                  <label for="notice6">Newsletter</label>
+                </div>
+              </form>
+            </div>
+            <div class="setting__right--btn">
+              <div><button class="LogOutBtn" type="button">Log out</button></div>
+              <span class="setting__right--btn-border"></span>
+              <div class="setting__right--mobile-btn">
+                <div><button class="DiscardBtn" type="button">Discard changes</button></div>
+              <div><button class="SaveBtn" type="button">Save changes</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
