@@ -168,6 +168,9 @@ a {
     grid-template-columns: repeat(2, 1fr);
 }
 
+
+    /*===========
+    BLOCK-SETTINGS*/
 .block_settings--right-side {
     display: grid;
     grid-template-columns: var(1, 1fr);
@@ -256,6 +259,8 @@ a {
 
 
 
+    /*===========
+    BLOCK-ACCOUNT*/
 .block_account--left-side {
     display: grid;
     grid-template-columns: var(1, 1fr);
@@ -359,14 +364,17 @@ a {
     border: 1px solid #4E60FF;
 }
 
-.auth_form--block {
+
+    /*===========
+    FORM*/
+.search-form {
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 26px 16px;
 }
 
-.label_user {
+.search-form_label {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 600;
@@ -375,7 +383,7 @@ a {
     color: var(--black);
 }
 
-.input_user {
+.search-form_input {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
@@ -391,14 +399,15 @@ a {
     border-radius: 8px;
 }
 
-
+    /*===========
+    EMAIL*/
 .email {
     padding-bottom: 20px;
     width: 100%;
     border-bottom: 1px solid var(--grey-lightest);
 }
 
-.email_name {
+.email-name {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
@@ -407,22 +416,22 @@ a {
     color: var(--dark);
 }
 
-.email_notifications--big--block {
+.email-notifications_inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.email_notifications--item {
+.email-notifications_item {
     display: flex;
     margin: 12px 0;
 }
 
-.email_notifications--input {
+.email-notifications_input {
     width: 20px;
     height: 20px;
 }
 
-.email_user--title {
+.email-notifications_title {
     margin-left: 12px;
     font-family: 'Nunito';
     font-style: normal;
@@ -432,18 +441,21 @@ a {
     color: var(--dark);
 }
 
+
+    /*===========
+    CRT*/
 .crt {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 20px 0;
 }
 
-.crt_btn--logout {
+.crt-btn_logout {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
 
-.btn_logout {
+.crt-btn-left {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -466,14 +478,14 @@ a {
     transition: background .1s linear, color .1s linear;
 }
 
-.btn_logout:hover {
+.crt-btn-left:hover {
     color: var(--white);
     background: var(--error);
     box-shadow: 0px 8px 20px rgba(78, 96, 255, 0.16);
     border-radius: 8px;
 }
 
-.crt_inner {
+.crt-btn_inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
