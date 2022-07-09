@@ -365,7 +365,6 @@
     background: #FFFFFF;
     border: 2px solid #EDEEF2;
     border-radius: 16px;
-    min-width: 350px;
   }
   
   .settings_account-inner:hover {
@@ -581,10 +580,6 @@
 
 /* Here you can define styles how to change on mobile  */
 @media screen and (max-width: 768px) {
-    .container {
-        padding: 0 15px;
-    }
-
     .header__menu--search {
         display: none;
     }
@@ -687,5 +682,11 @@
   .SaveBtn {
       width: 100%;
       margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    padding: 0 15px;
   }
 }
