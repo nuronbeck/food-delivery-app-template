@@ -10,6 +10,7 @@
     --white: #fff;
     --dark: #2B2B43;
     --grey: #83859C;
+    --grey-darker: #545563;
     --grey-light: #C7C8D2;
     --grey-lightest: #EDEEF2;
     --error: #FF5C60;
@@ -31,10 +32,317 @@
     max-width: var(--breakpoint-desktop);
 }
 
+.header__menu {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--primary-light);
+    margin-bottom: 16px;
+}
+
+.header__menu--left-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header__menu--logo {
+    width: 79px;
+    height: 40px;
+}
+
+.header__menu--search {
+    position: relative;
+    margin-left: 48px;
+}
+
+.header__menu--search-input {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    background-color: var(--grey-lightest);
+    padding: 10px 12px;
+    padding-right: calc((12px * 2) + 16px);
+    border-radius: 12px;
+    border: none;
+    outline-color: var(--primary);
+    height: 40px;
+    min-width: 224px;
+    box-sizing: border-box;
+}
+
+.header__menu--search-icon {
+    position: absolute;
+    color: var(--grey);
+    width: 16px;
+    height: 16px;
+    top: calc((40px - 16px) / 2);
+    right: calc((40px - 16px) / 2);
+}
+
+/*  Here you can define styles how to create menu right side  */
+
+.header__menu--right-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__menu--link {
+    display: flex;
+    align-items: center;
+}
+
+.menu_link {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--dark);
+    list-style: none;
+    margin: 0 28px;
+}
+
+.menu_link:hover {
+    color: var(--primary);
+    transition: .5s;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu--divider-vertical {
+    height: 32px;
+    border-right: 1px solid var(--grey-lightest);
+}
+
+.header__menu--icon {
+    position: relative;
+    margin-right: 12px;
+}
+
+.header__menu--icon-item {
+    background-color: var(--primary-light);
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.header__menu--icon-number {
+    position: absolute;
+    background-color: #4E60FF;
+    border-radius: 8px;
+    padding: 2px 6px;
+    color: var(--white);
+    right: -6px;
+    top: -6px;
+}
+
+.header__menu--useravatar {
+    border: 2px solid #EDEEF2;
+    border-radius: 16px;
+    padding: 2px;
+}
+
+.header__menu--icon-mobile {
+    display: none;
+}
+
+
+/* Products list  */
+.products__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.product__card {
+    border: 1px solid var(--grey-lightest);
+    border-radius: 16px;
+}
+
+.card__preview {
+    position: relative;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    border-radius: 16px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card__preview--badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    padding: 8px 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: var(--white);
+    text-transform: uppercase;
+    border-radius: 0 16px;
+    background-color: var(--primary);
+}
+
+.card__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.card__content--title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--dark);
+    margin-bottom: 6px;
+}
+
+.card__content--info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 14px;
+}
+
+.card__content--cook-time, .card__content--price {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 16px;
+    color: var(--grey);
+}
+
+.card__content--tag-dot {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.card__content--hashtags {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card__content--hashtag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    border-radius: 100px;
+    color: var(--grey-darker);
+    background-color: var(--grey-lightest);
+    margin-right: 8px;
+}
+
+.card__content--hashtag img {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+.card__content--bag {
+    position: relative;
+}
+
+.card__content--bag svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card__content--bag-count {
+    position: absolute;
+    top: -12px;
+    right: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 2px;
+    min-width: 14px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Account page  */
+
 
 /* Here you can define styles how to change on mobile  */
 @media screen and (max-width: 768px) {
-  .container {
-      padding: 0 15px;
-  }
+    .container {
+        padding: 0 15px;
+    }
+
+    .header__menu--search {
+        display: none;
+    }
+
+    .header__menu--logo {
+        padding-left: 15px;
+    }
+
+    .header__menu--link {
+        display: none;
+    }
+
+    .header__navbar {
+        display: flex;
+    }
+
+    .header__menu--icon {
+        margin-left: 59px;
+    }
+
+    .header__menu--useravatar {
+        border: 2px solid var(--primary);
+        margin-left: 12px;
+    }
+
+    .header__menu--divider-vertical {
+        margin: 0 19px;
+        border: 1px solid var(--grey-lightest);
+        height: 32px;
+        color: var(--grey);
+    }
+
+    .header__menu--icon-mobile {
+        display: block;
+        background: #EDEEF2;
+        border-radius: 16px;
+        padding: 14px;
+        cursor: pointer;
+        border: 1px solid var(--white);
+    }
+
+    .header__menu--icon-mobile:hover {
+        border: 1px solid var(--primary);
+    }
+
+
+    /* Products list mobile      */
+    .products__list {
+        grid-template-columns: 1fr;
+    }
 }
