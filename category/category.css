@@ -51,9 +51,6 @@ a {
 }
 
 .hero_inner {
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 15px;
@@ -64,8 +61,8 @@ a {
     border: 1px solid var(--grey-lightest);
     border-radius: 16px;
     background: var(--white);
-
     text-align: center;
+    transition: background .25s linear, border .25s linear;
 }
 
 .hero_item:hover {
@@ -81,10 +78,11 @@ a {
 }
 
 .hero_name {
+    font-size: 13px;
     font-style: 13px;
     font-weight: 700;
     color: var(--black);
-    font-family: 'Nunito',sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     line-height: 18px;
     letter-spacing: 0.1px;
@@ -93,10 +91,6 @@ a {
 .hero_name:hover {
     color: var(--bluw-light);
 }
-
-
-
-
 
 
 
