@@ -451,13 +451,13 @@ input[type=checkbox]:checked+label:before {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
-    color: #FFFFFF;
+    color: var(--white);
     cursor: pointer;
 }
 
 .SaveBtn:hover {
     background: transparent;
-    border-color: #4E60FF;
+    border-color: var(--primary);
     color: var(--primary);
 }
 
