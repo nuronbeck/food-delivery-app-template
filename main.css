@@ -748,6 +748,11 @@ a {
         border: 1px solid var(--primary);
     }
 
+    .category__inner {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 15px;
+    }
+
 
     /* Products list mobile      */
     .products__list {
