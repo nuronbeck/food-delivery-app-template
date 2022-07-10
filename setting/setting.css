@@ -155,9 +155,9 @@
 }
 
 /* setting section */
-.settings {
+.setting {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
 }
 
 .setting__left--side {
@@ -182,7 +182,7 @@
     background: #FFFFFF;
     border: 2px solid #EDEEF2;
     border-radius: 16px;
-    min-width: 350px;
+    min-width: 390px;
 }
 
 .settings_account-inner:hover {
@@ -518,6 +518,7 @@ input[type=checkbox]:checked+label:before {
     /* setting account mobile style */
     .settings {
         grid-template-columns: repeat(1, 1fr);
+
 
     }
 
