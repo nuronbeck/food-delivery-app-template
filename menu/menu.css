@@ -204,6 +204,5 @@
 
     .header__menu--icon-mobile:hover {
         border: 1px solid var(--primary);
-    }
-
+    } 
 }
