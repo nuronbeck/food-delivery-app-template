@@ -1,0 +1,12 @@
+.product__container {
+  max-width: 300px; }
+.product__item {
+  padding: 10px; }
+.product__title {
+  font-size: 20px;
+  color: black; }
+.product__price {
+  font-size: 14px;
+  color: #2f2f2f; }
+
+/*# sourceMappingURL=example.css.map */

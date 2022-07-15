@@ -1,0 +1,19 @@
+.product {
+  &__container {
+    max-width: 300px;
+  }
+  
+  &__item {
+    padding: 10px;
+  }
+  
+  &__title {
+    font-size: 20px;
+    color: black;
+  }
+  
+  &__price {
+    font-size: 14px;
+    color: rgb(47, 47, 47);
+  }
+}
